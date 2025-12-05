@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Mesa Certa</title>
+</head>
+<body>
+    <form id="form-pesquisa" class="card">
+        <img src="/img/logo.png" alt="" class="img-logo">
+        <h1>Restaurante Mesa Certa</h1>
+        <h3>Sua opinião é o nosso ingrediente secreto!</h3>
+        <hr style="border: 0; border-top: 1px solid #a5d6a7; margin-bottom: 25px;">
+
+        <fieldset>
+            <legend>1. Avaliação Geral</legend>
+            
+            <label>Como você avalia sua experiência geral hoje?</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="geral_exp" value="1" required><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="geral_exp" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="geral_exp" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="geral_exp" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="geral_exp" value="5"><span>5</span></div>
+            </div>
+
+            <label>Você voltaria a frequentar nosso restaurante?</label>
+            <select name="geral_retorno" required>
+                <option value="">Selecione...</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+                <option value="Talvez">Talvez</option>
+            </select>
+
+            <label>Você indicaria nosso restaurante a um amigo?</label>
+            <div style="margin-top: 10px;">
+                <label style="display:inline; margin-right:15px;"><input type="radio" name="geral_indicacao" value="Sim" required> Sim</label>
+                <label style="display:inline;"><input type="radio" name="geral_indicacao" value="Não"> Não</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Comida e Bebida</legend>
+            
+            <label>Qualidade geral dos pratos:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="prod_qualidade" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="prod_qualidade" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="prod_qualidade" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="prod_qualidade" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="prod_qualidade" value="5"><span>5</span></div>
+            </div>
+
+            <label>Sabor da comida:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="prod_sabor" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="prod_sabor" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="prod_sabor" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="prod_sabor" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="prod_sabor" value="5"><span>5</span></div>
+            </div>
+
+            <label>Variedade do cardápio:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="prod_variedade" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="prod_variedade" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="prod_variedade" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="prod_variedade" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="prod_variedade" value="5"><span>5</span></div>
+            </div>
+
+            <label>Qualidade das bebidas:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="prod_bebidas" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="prod_bebidas" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="prod_bebidas" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="prod_bebidas" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="prod_bebidas" value="5"><span>5</span></div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Atendimento</legend>
+            
+            <label>Cortesia e simpatia da equipe:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="serv_cortesia" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="serv_cortesia" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="serv_cortesia" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="serv_cortesia" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="serv_cortesia" value="5"><span>5</span></div>
+            </div>
+
+            <label>Eficiência e rapidez do serviço:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="serv_rapidez" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="serv_rapidez" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="serv_rapidez" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="serv_rapidez" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="serv_rapidez" value="5"><span>5</span></div>
+            </div>
+
+            <label>Conhecimento da equipe sobre o cardápio:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="serv_conhecimento" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="serv_conhecimento" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="serv_conhecimento" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="serv_conhecimento" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="serv_conhecimento" value="5"><span>5</span></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Ambiente</legend>
+            
+            <label>Limpeza e organização:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="amb_limpeza" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="amb_limpeza" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="amb_limpeza" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="amb_limpeza" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="amb_limpeza" value="5"><span>5</span></div>
+            </div>
+
+            <label>Conforto (mesas e cadeiras):</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="amb_conforto" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="amb_conforto" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="amb_conforto" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="amb_conforto" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="amb_conforto" value="5"><span>5</span></div>
+            </div>
+
+            <label>Decoração:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="amb_decoracao" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="amb_decoracao" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="amb_decoracao" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="amb_decoracao" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="amb_decoracao" value="5"><span>5</span></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Custo-Benefício</legend>
+            <label>Valor pago em relação à experiência:</label>
+            <div class="escala-container">
+                <div class="escala-item"><input type="radio" name="preco_valor" value="1"><span>1</span></div>
+                <div class="escala-item"><input type="radio" name="preco_valor" value="2"><span>2</span></div>
+                <div class="escala-item"><input type="radio" name="preco_valor" value="3"><span>3</span></div>
+                <div class="escala-item"><input type="radio" name="preco_valor" value="4"><span>4</span></div>
+                <div class="escala-item"><input type="radio" name="preco_valor" value="5"><span>5</span></div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Comentários Finais</legend>
+            
+            <label for="gostou">O que mais gostou? (opcional)</label>
+            <textarea name="gostou" id="gostou" rows="3" placeholder="Conte-nos os pontos positivos..."></textarea>
+
+            <label for="melhorar">O que podemos melhorar? (opicional)</label>
+            <textarea name="melhorar" id="melhorar" rows="3" placeholder="Sugestões e críticas..."></textarea>
+        </fieldset>
+
+        <button type="submit" class="btn-enviar">Enviar Avaliação</button>
+    </form> 
+
+    <script>
+        document.getElementById('form-pesquisa').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            window.location.href = 'enviado.html';
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
